@@ -35,35 +35,34 @@
       <v-toolbar-title v-text="title"></v-toolbar-title>
       <v-spacer></v-spacer>
     </v-toolbar>
-    <v-content>
-      <router-view/>
-    </v-content>
-    <v-footer :fixed="fixed" app>
-      <blog-footer></blog-footer>
-    </v-footer>
+    <blog-main></blog-main>
+    <blog-footer></blog-footer>
   </v-app>
 </template>
 
 <script>
+import BlogHeader from './components/bone/header.vue'
+import BlogMain from './components/bone/main.vue'
+import BlogSider from './components/bone/sider.vue'
 import BlogFooter from './components/bone/footer.vue'
 export default {
   data () {
     return {
       clipped: true,
       drawer: true,
-      fixed: false,
       items: [{
         icon: 'bubble_chart',
         title: 'Inspire'
       }],
       miniVariant: false,
-      right: true,
-      rightDrawer: false,
       title: 'Pangjian\'s Blog'
     }
   },
   name: 'App',
   components: {
+    'BlogHeader': BlogHeader,
+    'BlogMain': BlogMain,
+    'BlogSider': BlogSider,
     'BlogFooter': BlogFooter
   }
 }
