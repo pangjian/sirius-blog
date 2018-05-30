@@ -1,5 +1,5 @@
 <template>
-<v-footer app height="auto">
+<v-footer app height="auto" absolute>
   <v-layout row wrap align-center>
     <v-flex xs12>
   <v-card
