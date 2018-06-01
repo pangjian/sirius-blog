@@ -1,6 +1,7 @@
 const hash = require('hash-sum')
 const LRU = require('lru-cache')
 const hljs = require('highlight.js')
+const matter = require('gray-matter')
 
 // markdown-it and plugins
 const emoji = require('markdown-it-emoji')
@@ -47,7 +48,7 @@ module.exports = function (src) {
     return cached
   }
 
-  const html = md.render(src)
+  const html = md.render(matter(src).content)
 
   const res = (
     `<template>\n` +

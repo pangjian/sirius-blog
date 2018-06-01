@@ -26,7 +26,7 @@
       </v-toolbar>
       <v-divider></v-divider>
       <v-list class="pt-2">
-        <v-list-tile value="true" v-for="(item, i) in items" :key="i" @click="" >
+        <v-list-tile value="true" v-for="(item, i) in items" :key="i" @click="clickSider(item.link)" >
           <v-list-tile-action>
             <v-icon v-html="item.icon"></v-icon>
           </v-list-tile-action>
@@ -62,12 +62,12 @@
         {
           icon: 'info',
           title: '关于我',
-          link: '/'
+          link: '/about'
         },
         {
           icon: 'dashboard',
           title: '友链',
-          link: '/'
+          link: '/link'
         }],
         miniVariant: false,
         title: 'Pangjian\'s Blog'
@@ -81,6 +81,9 @@
         if (!this.$vuetify.breakpoint.mdAndDown) {
           this.drawer = true
         }
+      },
+      clickSider (path) {
+        this.$router.push(path)
       }
     }
   }
