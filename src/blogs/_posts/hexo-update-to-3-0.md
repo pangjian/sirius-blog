@@ -1,3 +1,4 @@
+---
 title: 升级Hexo2.X到3.0
 date: 2015-04-11 21:47:32
 tags: [hexo]

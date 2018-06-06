@@ -1,3 +1,4 @@
+---
 title: 使用travis-ci持续集成Hexo静态博客
 tags:
   - hexo

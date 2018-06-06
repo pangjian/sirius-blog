@@ -1,3 +1,4 @@
+---
 title: 迈向PWA！利用serviceworker的离线访问模式
 date: 2017-02-08 08:02:10
 tags: [javascript,ServiceWorker,PWA]

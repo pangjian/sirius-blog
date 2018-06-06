@@ -5,6 +5,7 @@
   "author": "pangjian <pangjian1010@gmail.com>",
   "private": true,
   "scripts": {
+    "build-post-list": "node build/build-post-list.js",
     "dev": "node build/dev-server.js",
     "start": "node build/dev-server.js",
     "build": "node build/build.js",

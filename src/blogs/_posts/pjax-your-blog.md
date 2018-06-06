@@ -1,3 +1,4 @@
+---
 title: 使用Pjax优化你的网站
 tags:
   - javascript

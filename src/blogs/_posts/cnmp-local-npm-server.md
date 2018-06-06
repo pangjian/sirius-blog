@@ -1,3 +1,4 @@
+---
 title: 使用CNPM搭建私有NPM仓库
 date: 2016-06-01 11:13:52
 tags: [Nodejs,cnpm]
