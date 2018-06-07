@@ -1,9 +1,8 @@
 <template>
   <v-content>
-    <router-view/>
-    <div class="text-xs-center">
-      <v-pagination :length="4" v-model="page" circle></v-pagination>
-    </div>
+    <keep-alive include="page">
+      <router-view/>
+    </keep-alive>
   </v-content>
 </template>
 
@@ -12,8 +11,9 @@
     name: 'BlogMain',
     data () {
       return {
-        page: 1
       }
+    },
+    beforeMount () {
     }
   }
 </script>

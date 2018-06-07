@@ -84,6 +84,9 @@
       },
       clickSider (path) {
         this.$router.push(path)
+        if (path === '/') {
+          this.$store.dispatch('changePage', 1)
+        }
       }
     }
   }
